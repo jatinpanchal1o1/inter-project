@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Mulish-Bold";
+  src: url("./assets/mulish-cufonfonts/Mulish-Bold.ttf");
+}
+#root {
+  text-align: center;
+  font-family: Mulish-Bold;
+}

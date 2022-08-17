@@ -1,0 +1,225 @@
+@import "../variables/variables.scss";
+
+// Navbar component css.........
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: $layout_color;
+    color: $mainText_color;
+    border-bottom: 1px solid $itemCover_color;
+}
+
+.rightSide{
+    margin-left: 1rem;
+}
+
+.leftSide{
+    margin-right: 1rem;
+}
+
+.profileSide{
+    list-style: none;
+    display: flex;
+}
+
+.profileSide > li {
+    margin-left: 1rem;
+}
+
+.icon{
+    padding-top: 8px;
+    cursor: pointer;
+}
+
+.bell_icon{
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-left: 0;
+}
+
+#accountName{
+    text-align: start;
+    line-height: 0.2;
+}
+
+@font-face {
+    font-family: "Mulish-black";
+    src: url("../assets/mulish-cufonfonts/Mulish-Black.ttf");
+}
+
+.account_name{
+    font-family: Mulish-black;
+}
+
+@font-face {
+    font-family: "Mulish-ExtraLight";
+    src: url("../assets/mulish-cufonfonts/Mulish-ExtraLight.ttf");
+}
+
+.account_type{
+    font-family: Mulish-ExtraLight;
+    font-size: 12px;
+}
+
+.rightSide{
+   display: flex;
+}
+
+.rightSide a{
+    padding-top: 24px;
+}
+
+.rightSide h2{
+    padding-top: 10px;
+    margin-left: 1rem;
+}
+
+
+
+// Sidebar component css ........
+
+.Sidebar{
+    position: absolute;
+    background-color: $layout_color;
+    width: 110px;
+    border-right: 1px solid $itemCover_color;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.topSide{
+  width: 5rem;
+}
+
+.topList{
+    margin: 0 !important;
+    padding-top: 20px;
+    padding-left: 25px;
+    text-align: start;
+    list-style: none;
+}
+
+.topList li{
+    cursor: pointer;
+    padding: 12px;
+    padding-left: 13px;
+}
+
+.topList li:hover{
+    background-color: $active_color;
+    border-radius: 6px;
+}
+
+.bottomSide {
+    bottom: 0;
+    width: 5rem;
+    margin-top: 2em;
+}
+
+.bottomList {
+    margin: 0 !important;
+    padding-top: 20px;
+    padding-left: 25px;
+    text-align: start;
+    list-style: none;
+}
+
+.bottomList li {
+    cursor: pointer;
+    padding: 12px;
+    padding-left: 13px;
+}
+
+.bottomList li:hover {
+    background-color: $active_color;
+    border-radius: 6px;
+}
+
+
+// Site_Content ......
+.container{
+    position: absolute;
+}
+
+.siteContainer{
+    width: auto;
+    padding: 2rem;
+    padding-left: 9rem;
+    background-color: $background_color;
+    text-align: center;
+}
+
+.upperContainer{
+    border-radius: 8px;
+    width: auto;
+    background-color: $layout_color;
+}
+   
+   
+ // SearchBar.....
+ 
+ .searchBar{
+    width: 100%;
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+ }
+ .searchBar img{
+    z-index: 1;
+    left: 0;
+    cursor: pointer;
+    padding-left: 1em;
+    border: none;
+    background-color: $background_color;
+    border-radius: 8px 0px 0px 8px;
+ }
+
+ @font-face {
+    font-family: 'Mulish-Light';
+    src: url('../assets/mulish-cufonfonts/Mulish-Light.ttf');
+ }
+
+ .searchBar input{
+    padding: 0.8em;
+    padding-left: 0.4em;
+    border: none;
+    font-family: Mulish-Light;
+    color: $secondaryText_color;
+    background-color: $background_color;
+    border-radius: 0px 8px 8px 0px;
+    width: 90%;
+
+ }
+ ::-webkit-input-placeholder {
+     /* Chrome/Opera/Safari */
+     color: $secondaryText_color;
+ }
+
+ ::-moz-placeholder {
+     /* Firefox 19+ */
+     color: $secondaryText_color;
+ }
+
+ :-ms-input-placeholder {
+     /* IE 10+ */
+     color: $secondaryText_color;
+ }
+
+ :-moz-placeholder {
+     /* Firefox 18- */
+     color: $secondaryText_color;
+ }
+
+ .searchBar input:focus{
+    outline: none;
+ }
+
+
+ // SelectTab......
+ // mainContainer........
+  
+ .mainContaner{
+    text-align: start;
+    padding-left: 1em;
+    padding-bottom: 1em;
+ }

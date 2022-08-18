@@ -1,5 +1,5 @@
 import React from "react";
-import SearchBar from "./Containt/SearchBar";
+import SearchBar from "./containt/SearchBar";
 import SelectTab from "./containt/SelectTab";
 import ProductCard from "./containt/ProductCard";
 import Paper from "@mui/material/Paper";

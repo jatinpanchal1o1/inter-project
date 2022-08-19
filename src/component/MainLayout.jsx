@@ -10,6 +10,7 @@ import Order from "../pages/order";
 import NotFound from "../pages/notFound";
 import Users from "../pages/user";
 import Home from "../pages/home";
+import Customers from "../pages/customer";
 
 const MainLayout = (props) => {
   return (
@@ -24,6 +25,7 @@ const MainLayout = (props) => {
           <Route path="setting" element={<Setting />} />
           <Route path="order" element={<Order />} />
           <Route path="user" element={<Users />} />
+          <Route path="customer" element={<Customers />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

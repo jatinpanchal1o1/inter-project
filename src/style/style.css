@@ -72,9 +72,10 @@
 #Sidebar {
   position: absolute;
   background-color: white;
+  z-index: 1 !important;
   width: 110px;
   border-right: 1px solid #E2E2EA;
-  height: 100vh;
+  height: auto;
   justify-content: space-between;
 }
 

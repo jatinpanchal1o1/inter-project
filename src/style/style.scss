@@ -78,12 +78,13 @@
 
 // Sidebar component css ........
 
-.Sidebar{
+#Sidebar{
     position: absolute;
     background-color: $layout_color;
+    z-index: 1 !important;
     width: 110px;
     border-right: 1px solid $itemCover_color;
-    height: 100vh;
+    height: 100vh !important;
     justify-content: space-between;
 }
 
@@ -135,6 +136,24 @@
     border-radius: 6px;
 }
 
+.active {
+    border-radius: 6px;
+    background-color: $active_color;
+    color: $layout_color;
+}
+
+.active a {
+    background-color: $active_color;
+    color: $layout_color;
+}
+
+//contentContainer......
+
+// .contentContainer{
+//     width: fit-content;
+//     margin-left: 250px;
+//     z-index: -1;
+// }
 
 // Site_Content ......
 .container{

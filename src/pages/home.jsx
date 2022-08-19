@@ -1,7 +1,7 @@
 import React from "react";
-import SearchBar from "./containt/SearchBar";
-import SelectTab from "./containt/SelectTab";
-import ProductCard from "./containt/ProductCard";
+import SearchBar from "../component/containt/SearchBar";
+import SelectTab from "../component/containt/SelectTab";
+import ProductCard from "../component/containt/ProductCard";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";

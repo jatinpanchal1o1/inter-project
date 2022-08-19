@@ -6,11 +6,7 @@ import MainLayout from "./component/MainLayout";
 function App() {
   const [count, setCount] = useState(0);
 
-  return (
-    <MainLayout>
-      <div className="App"></div>
-    </MainLayout>
-  );
+  return <MainLayout />;
 }
 
 export default App;

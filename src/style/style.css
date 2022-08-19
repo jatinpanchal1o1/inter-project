@@ -69,7 +69,7 @@
   margin-left: 1rem;
 }
 
-.Sidebar {
+#Sidebar {
   position: absolute;
   background-color: white;
   width: 110px;
@@ -124,6 +124,17 @@
 .bottomList li:hover {
   background-color: #5541D7;
   border-radius: 6px;
+}
+
+.active {
+  border-radius: 6px;
+  background-color: #5541D7;
+  color: white;
+}
+
+.active a {
+  background-color: #5541D7;
+  color: white;
 }
 
 .container {

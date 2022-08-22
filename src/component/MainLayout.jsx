@@ -17,8 +17,6 @@ const MainLayout = (props) => {
     <div className="App">
       <Navbar />
       <Sider_Bar />
-      {/* <Home /> */}
-      {/* <Router> */}
       <div className="contentContainer">
         <Routes>
           <Route index element={<Home />} />
@@ -29,9 +27,8 @@ const MainLayout = (props) => {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
-      {/* </Router> */}
+
       {props.children}
-      {/* <Footer /> */}
     </div>
   );
 };

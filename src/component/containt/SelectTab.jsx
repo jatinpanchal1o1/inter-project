@@ -2,11 +2,26 @@ import * as React from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
+import { makeStyles } from "@mui/material";
 
-// const sxStyle = {
-//   paddingTop: 2,
-//   fontFamily: "Arial",
-// };
+const useStyles = makeStyles((theme) => ({
+  root: {
+    height: "100vh",
+    backgroundColor: "blue",
+    [theme.breakpoints.up("sm")]: {
+      backgroundColor: "red",
+    },
+    [theme.breakpoints.up("md")]: {
+      backgroundColor: "green",
+    },
+    [theme.breakpoints.up("lg")]: {
+      backgroundColor: "orange",
+    },
+    [theme.breakpoints.up("xl")]: {
+      backgroundColor: "cyan",
+    },
+  },
+}));
 
 export default function ColorTabs() {
   const [value, setValue] = React.useState("one");
@@ -15,8 +30,10 @@ export default function ColorTabs() {
     setValue(newValue);
   };
 
+  const classes = useStyles();
+
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box className={classes.root}>
       <Tabs
         value={value}
         onChange={handleChange}

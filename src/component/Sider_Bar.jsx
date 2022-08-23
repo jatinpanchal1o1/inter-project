@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 // const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
 //   (icon, index) => {
 //     const key = String(index + 1);
@@ -20,6 +20,7 @@ import React from "react";
 const style = { color: "#92929D", fontSize: "1.5em" };
 
 import { AiOutlineAppstore } from "react-icons/ai";
+import { AiOutlineMenu } from "react-icons/ai";
 import Order_icon from "../assets/Dazzie_Icons/orders.svg";
 import Customer_icon from "../assets/Dazzie_Icons/customer.svg";
 import Package_icon from "../assets/Dazzie_Icons/Package.svg";
@@ -28,8 +29,23 @@ import User_icon from "../assets/Dazzie_Icons/user.svg";
 import Setting_icon from "../assets/Dazzie_Icons/seettings.svg";
 import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { useState } from "react";
 
 const Sider_Bar = () => {
+  const [state, setState] = useState(false);
+  const [styled, setStyled] = useState({
+    display: "none",
+  });
+
+  const handler = () => {
+    state === false ? setState(true) : setState(false);
+    state === true
+      ? setStyled({ display: "block" })
+      : setStyled({ display: "none" });
+    console.log(styled);
+    console.log(state);
+  };
+
   //assigning location variable
   const location = useLocation();
 
@@ -41,6 +57,9 @@ const Sider_Bar = () => {
 
   return (
     <div className="container">
+      <div className="aiMenu">
+        <AiOutlineMenu style={style} onClick={handler} />
+      </div>
       <div id="Sidebar">
         <div className="topSide">
           <ul className="topList">

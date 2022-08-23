@@ -31,6 +31,7 @@
 .bell_icon {
   padding-top: 1em;
   padding-right: 1em;
+  margin-right: 2em;
   padding-left: 0;
 }
 
@@ -99,7 +100,6 @@
 
 .topList li:hover {
   background-color: #5541D7;
-  color: white;
   border-radius: 6px;
 }
 
@@ -125,7 +125,6 @@
 
 .bottomList li:hover {
   background-color: #5541D7;
-  color: white;
   border-radius: 6px;
 }
 
@@ -144,13 +143,12 @@
   position: absolute;
 }
 
-/* .siteContainer {
+.siteContainer {
   width: auto;
   padding: 2rem;
-  padding-left: 9rem;
   background-color: #F7F7FC;
   text-align: center;
-} */
+}
 
 .upperContainer {
   border-radius: 8px;
@@ -161,17 +159,14 @@
 .searchBar {
   width: 100%;
   padding-top: 8px;
-  margin-right: 1.5em;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .searchBar img {
-  z-index: 1;
   left: 0;
   cursor: pointer;
-  padding: 6.5px;
-  margin-left: 2em;
+  padding-left: 1em;
   border: none;
   background-color: #F7F7FC;
   border-radius: 8px 0px 0px 8px;
@@ -223,9 +218,44 @@
 }/*# sourceMappingURL=style.css.map */
 
 .contentContainer{
+  width: auto;
+    padding: 2rem;
+    padding-left: 9rem;
+    background-color: #F7F7FC;
+    text-align: center;
+}
+
+.profileShow{
+ display: flex;
+ justify-content: space-between;
+ width: 120px;
+}
+
+.aiMenu{
+  display: none;
+}
+@media screen and (max-width: 760px) {
+  #Sidebar{
+    display: none;
+  }
+  .contentContainer{
+  width: auto;
+    padding: 0;
+    margin: 0;
+    background-color: #F7F7FC;
+    text-align: center;
+  }
+    .aiMenu {
+      display: block;
+    }
+}
+
+@media screen and (max-width: 471px) {
+  .bell_icon{
+    margin-right: 0;
+  }
+  .profileShow{
+    display: block;
     width: auto;
-      padding: 2rem;
-      padding-left: 9rem;
-      background-color: #F7F7FC;
-      text-align: center;
+  }
 }

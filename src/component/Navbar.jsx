@@ -29,17 +29,19 @@ const Navbar = () => {
 
             <img src={Bell_icon} alt="Bell icon" />
           </li>
-          <li className="avatar_icon icon">
-            <Avatar alt="Sumanto" src="../assets/Dazzie Icons/avatar.jpg" />
-          </li>
-          <li id="accountName">
-            <p>
-              <span className="account_name">Sumanto</span>
-            </p>
-            <p>
-              <span className="account_type">Cashier</span>
-            </p>
-          </li>
+          <div className="profileShow">
+            <li className="avatar_icon icon">
+              <Avatar alt="Sumanto" src="../assets/Dazzie Icons/avatar.jpg" />
+            </li>
+            <li id="accountName">
+              <p>
+                <span className="account_name">Sumanto</span>
+              </p>
+              <p>
+                <span className="account_type">Cashier</span>
+              </p>
+            </li>
+          </div>
         </ul>
       </div>
     </div>

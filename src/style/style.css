@@ -70,7 +70,7 @@
   margin-left: 1rem;
 }
 
-#Sidebar {
+.Sidebar {
   position: absolute;
   background-color: white;
   z-index: 1 !important;
@@ -78,6 +78,10 @@
   border-right: 1px solid #E2E2EA;
   height: auto;
   justify-content: space-between;
+}
+
+.expandSidbar{
+  display: none;
 }
 
 .topSide {
@@ -232,12 +236,12 @@
 }
 
 .aiMenu{
+  z-index: 2;
   display: none;
+  position: absolute;
 }
-@media screen and (max-width: 760px) {
-  #Sidebar{
-    display: none;
-  }
+@media screen and (max-width: 899px) {
+
   .contentContainer{
   width: auto;
     padding: 0;

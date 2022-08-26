@@ -1,24 +1,4 @@
 import * as React from "react";
-// const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
-//   (icon, index) => {
-//     const key = String(index + 1);
-//     return {
-//       key: `sub${key}`,
-//       icon: React.createElement(icon),
-//       label: `subnav ${key}`,
-//       // children: new Array(4).fill(null).map((_, j) => {
-//       //   const subKey = index * 4 + j + 1;
-//       //   return {
-//       //     key: subKey,
-//       //     label: `option${subKey}`,
-//       //   };
-//       // }),
-//     };
-//   }
-// );
-
-const style = { color: "#92929D", fontSize: "1.5em" };
-
 import { AiOutlineAppstore } from "react-icons/ai";
 import { AiOutlineMenu } from "react-icons/ai";
 import Order_icon from "../assets/Dazzie_Icons/orders.svg";
@@ -30,6 +10,8 @@ import Setting_icon from "../assets/Dazzie_Icons/seettings.svg";
 import { NavLink } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+
+const style = { color: "#92929D", fontSize: "1.5em" };
 
 const Sider_Bar = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -64,18 +46,19 @@ const Sider_Bar = () => {
   //Javascript split method to get the name of the path in array
   const splitLocation = pathname.split("/");
 
-  // {
-  //   `Sidebar ${!state ? "expandSidbar" : ""}`;
-  // }
   return (
     <div className="container">
       {(state || screenWidth > 899) && (
-        <div className="Sidebar">
+        <div
+          className={`Sidebar ${
+            state && screenWidth < 899 ? "slide-fwd-right" : ""
+          }`}
+        >
           <div className="topSide">
             <ul className="topList">
               <li className={splitLocation[1] === "" ? "active" : ""}>
                 <NavLink to="/">
-                  <AiOutlineAppstore style={style} />
+                  <AiOutlineAppstore class="changeColor" />
                 </NavLink>
               </li>
               <li className={splitLocation[1] === "order" ? "active" : ""}>

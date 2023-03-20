@@ -14,7 +14,7 @@ const user = {
   city: "Los Angeles",
   country: "USA",
   jobTitle: "Senior Developer",
-  name: "Katarina Smith",
+  name: "Alexa Smith",
   timezone: "GTM-7",
 };
 

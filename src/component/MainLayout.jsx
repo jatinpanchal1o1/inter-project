@@ -19,7 +19,7 @@ const MainLayout = (props) => {
       <Sider_Bar />
       <div className="contentContainer">
         <Routes>
-          <Route index element={<Home />} />
+          <Route index path="inter-project/" element={<Home />} />
           <Route path="setting" element={<Setting />} />
           <Route path="order" element={<Order />} />
           <Route path="user" element={<Users />} />
